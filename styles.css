@@ -87,6 +87,7 @@ hr {
 
 .navigation .nav-brand {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .navigation .nav-pills {
