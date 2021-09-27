@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>blogs | Hamza</title>
+    <link rel="icon" href="./images/web-d.png">
+
+</head>
+
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Hamza Shaikh</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link " href="/pages/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/pages/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="hero">
+        <h1 class="hero-heading">Brief about "this" keyword</h1>
+    </header>
+
+    <article class="container-center showcase-blog">
+        <img src="../images/blog1/pooja-what-is-this-behaviour.png" >
+        <h3>This refers to an object on which we call out function</h3>
+        <img src="../images/blog1/1.jpeg" >
+        <p>
+            Here we are calling a function displayName on object obj1 therefore the value of this inside displayName should be obj1.
+            Note:Always look at what is before '.' operator  
+        </p>
+        <img src="../images/blog1/2.jpeg" >
+        <p>
+            No as in the code we are not using "." operator to call the function the value of this will be the window operator. Internally the call actually happens with <br>
+            "window.displayAge"
+        </p>
+        <img src="../images/blog1/3.jpeg" >
+        <p>
+            Here the value of this will be inside of displayAge is obj1. Therefore we can conclude that when it comes to regular functions the value of this keyword is basically what is before the "."   </p>
+            <p>
+                So it is basically following  some sort of dynamic scope ,It depends on how we call the function and not where the function is defined and that is why this is the most confusing topic in JavaScript. When scope is working lexically scope i.e where we define the function why is this keyword working dynamically i.e how we are calling the function and that is where arrow function comes into picture .
+            </p>
+            
+          </article>
+
+
+    <footer class="footer">
+        <div class="footer-header">Contact Me</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/shaikhhamza11">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" target="_blank" href="https://www.linkedin.com/in/shaikhhamza11">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/ea8d1510f0.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</html>

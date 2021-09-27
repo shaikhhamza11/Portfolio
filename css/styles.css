@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #2b6777;
+  --off-blue: #faf9f6;
+  --dark-gray: #6b7280;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px auto;
+}
+
+hr {
+  margin: 2rem 0rem;
+}
+
+/** spaces **/
+
+.margin-md {
+  margin: 2rem;
+}
+
+/** container **/
+.container {
+  padding: 0rem 1rem;
+}
+
+.container-center {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+/** links **/
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  color: white;
+  max-width: 131px;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border-radius: 2rem;
+  border: 1px solid var(--primary-color);
+  max-width: 131px;
+  margin: 1rem auto;
+  padding: 0.6rem 1.2rem;
+}
+
+/** look into BEM naming convention for CSS **/
+
+/** lists **/
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+  background-color: var(--primary-color);
+  color: #f2f2f2;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .link {
+  color: #ffff;
+}
+
+.navigation .link-active {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  background-color: var(--off-blue);
+  color: var(--primary-color);
+}
+
+.navigation .link:hover {
+  color: black;
+  font-weight: bold;
+}
+
+/** header **/
+
+.hero {
+  padding: 2rem;
+  padding-top: 5rem;
+}
+
+.hero .hero-img {
+  max-width: 80%;
+  width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.hero .hero-heading {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--primary-color);
+}
+
+.heading-inverted {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/** sections **/
+
+.section {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.section h1 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.ow {
+  background-color: var(--off-blue);
+}
+
+.section p {
+  line-height: 27px;
+  /* width:49rem; */
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/** footers **/
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 1rem;
+}
+
+.footer .link {
+  color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+/** projects **/
+.showcase-list {
+  padding: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.showcase-list p {
+  margin-bottom: 1.5rem;
+}
+
+/** blogs **/
+.showcase-blog {
+  padding-bottom: 6rem;
+}
+.showcase-blog img {
+  width: 50%;
+  height: 50%;
+  margin: 1rem auto;
+}
+.showcase-blog p {
+  font-weight: 510;
+}
+table {
+  border: 2px solid var(--primary-color);
+  padding: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+table thead {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-align: enter;
+  background-color: var(--primary-color);
+  color: var(--off-blue);
+}
+.caption {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+/* utilities classes */
+.mt-1 {
+  margin-top: 1rem;
+}
+
+/* media queries */
+@media (max-width: 900px) {
+  body {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .container-center {
+    width: auto;
+  }
+
+  .link-primary {
+    display: block;
+  }
+
+  .link-secondary {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-pills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .navigation .nav-brand {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .showcase-list p {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    max-width: 100%;
+    width: 95%;
+    margin-left: 0;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .section {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+
+  .section p {
+    font-size: 0.875rem;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .showcase-list {
+    margin: 0.5rem auto;
+  }
+
+  .showcase-list p {
+    font-size: 0.7rem;
+  }
+}

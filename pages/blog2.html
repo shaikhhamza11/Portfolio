@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <title>blogs | Hamza</title>
+    <link rel="icon" href="./images/web-d.png" />
+  </head>
+
+  <body>
+    <nav class="navigation container">
+      <div class="nav-brand">Hamza Shaikh</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="/">Home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/pages/projects.html">Projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/pages/blogs.html">Blogs</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero">
+      <h1 class="hero-heading">Brief about "this" keyword</h1>
+    </header>
+
+    <article class="container-center showcase-blog">
+      <h3>var , let and const</h3>
+      <p>
+        In this blog we are going to understand var , let and const that
+        JavaScript offers also talk about their scope
+      </p>
+      <img src="../images/blog2/1.jpeg" />
+      <p>
+        In the above code snippet we are just displaying the age by calling
+        function it will correctly log the age
+      </p>
+      <img src="../images/blog2/2.jpeg" />
+      <p>
+        Here we are moving the statement outside of the function .Here we're
+        getting an error as you can see. The reason for the refrence error is
+        because whatever variable you declare inside function actually belong to
+        that function because when we execute function a scope is created for
+        that function and when the function is done executing it will be remove
+        from the stack and there is no memory of it . When we are trying to log
+        age it is saying that age is not defined. By this we can conclude that
+        any variable declared with var keyword is function scope i.e it scope is
+        valid inside the function and not valid outside the function.
+      </p>
+      <img src="../images/blog2/3.png" />
+      <p>
+        In JavaScript anything that is declared under curly brackets {} is known
+        as block. A block is nothing but a multiple set of statements. In the
+        above example we can see the name as Hamza is logging even though it is
+        outside the block. Therefore we can conclude that var is not block scope
+      </p>
+      <img src="../images/blog2/4.png"/>
+      <p>
+        If we try the same code with let and const keyword we will get error as
+        both are block scope. Their scope is valid in the block and not outside
+        the block
+      </p>
+      <img src="../images/blog2/5.png" />
+      <p>
+        For the above code snippet if we try to access the value of i outside of
+        for loop it will show 5 but when we will try the same thing with let it
+        will show an error as shown below
+      </p>
+      <img src="../images/blog2/6.png" />
+
+      <img src="../images/blog2/7.png" />
+      <p>
+        In the above exmaple the value of age is 2 just because it was
+        redeclared. That conclude that we can redeclare and reassinged variable
+        if we use var
+      </p>
+
+      <img src="../images/blog2/8.png"  />
+      <p>
+        If we try the same thing with let or const it will show an error . Any
+        variable that is declared with let keyword cannot be redeclared inside
+        its scope . We can declare same variable using let into any other block
+        or function
+      </p>
+      <img src="../images/blog2/9.png" />
+      <p>
+        In the above example if we reassign or redeclared the variable using
+        const keyword it will give an error
+      </p>
+      <table>
+        <caption class="caption">
+          Conclusion
+        </caption>
+        <thead>
+          <tr>
+            <th>var</th>
+            <th>let</th>
+            <th>const</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Variables declared with var are in function scope</td>
+                <td>Variables declared with let are in block scope</td>
+                <td>Variables declared with var are in block scope</td>
+            </tr>
+            <tr>
+                <td>Variables declared with var can be redeclared and reassinged</td>
+                <td>Variables declared with let cannot be redeclared but can be  reassinged</td>
+                <td>Variables declared with const cannot be redeclared and reassinged</td>
+            </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <footer class="footer">
+      <div class="footer-header">Contact Me</div>
+      <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+          <a class="link" href="https://github.com/shaikhhamza11">
+            <i class="fab fa-github fa-3x"></i>
+          </a>
+        </li>
+
+        <li class="list-item-inline">
+          <a
+            class="link"
+            target="_blank"
+            href="https://www.linkedin.com/in/shaikhhamza11"
+          >
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/ea8d1510f0.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>
